@@ -97,7 +97,7 @@ const Header = ({ activeHeading }) => {
             ) : null}
           </div>
 
-          <div className={`${styles.button} bg-[#C1ED64] font-semibold`}>
+          <div className={`${styles.button} bg-[#C1ED64] px-2 font-semibold`}>
             <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
               <h1 className="text-black flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
@@ -294,7 +294,7 @@ const Header = ({ activeHeading }) => {
 
               <Navbar active={activeHeading} />
               <div
-                className={`${styles.button} ml-4 !rounded-[4px] bg-[#C1ED64]`}
+                className={`${styles.button} ml-4 px-2 !rounded-[4px] bg-[#C1ED64]`}
               >
                 <Link to="/shop-create">
                   <h1 className="text-black flex items-center">
