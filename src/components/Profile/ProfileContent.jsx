@@ -630,7 +630,7 @@ const Address = () => {
                   </div>
 
                   <div className="w-full pb-2">
-                    <label className="block pb-2">Choose your City</label>
+                    <label className="block pb-2">Choose your State</label>
                     <select
                       name=""
                       id=""
