@@ -32,11 +32,11 @@ const Cart = ({ setOpenCart }) => {
         {cart && cart.length === 0 ? (
           <div className="w-full h-screen flex items-center justify-center">
             <div className="flex w-full justify-end pt-5 pr-5 fixed top-3 right-3">
-               <RxCross1 
+              <RxCross1
                 size={25}
                 className="cursor-pointer"
                 onClick={() => setOpenCart(false)}
-                />
+              />
             </div>
             <h5>Cart Items is empty!</h5>
           </div>
@@ -53,7 +53,9 @@ const Cart = ({ setOpenCart }) => {
               {/* Item length */}
               <div className={`${styles.noramlFlex} p-4`}>
                 <IoBagHandleOutline size={25} />
-                <h5 className="pl-2 text-[20px] font-[500]">{cart && cart.length} items</h5>
+                <h5 className="pl-2 text-[20px] font-[500]">
+                  {cart && cart.length} items
+                </h5>
               </div>
 
               {/* cart Single Items */}
@@ -139,7 +141,7 @@ const CartSingle = ({ data, quantityChangeHandler, removeFromCartHandler }) => {
             ${data.discountPrice} * {value}
           </h4>
           <h4 className="font-[600] text-[17px] pt-[3px] text-[#d02222] font-Roboto">
-            US${totalPrice}
+            PKR{totalPrice}
           </h4>
         </div>
         <RxCross1
