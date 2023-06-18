@@ -58,7 +58,7 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-              <p className="font-Poppins font-bold text-[40px] text-[#3321C8]">
+              <p className="font-Poppins font-bold text-[40px] text-[#97c03e]">
                 Ecomm Web
               </p>
             </Link>
@@ -70,7 +70,7 @@ const Header = ({ activeHeading }) => {
               placeholder="Search Product..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md"
+              className="h-[40px] w-full px-2 border-[#C1ED64] border-[2px] rounded-md"
             />
             <AiOutlineSearch
               size={30}
@@ -97,9 +97,9 @@ const Header = ({ activeHeading }) => {
             ) : null}
           </div>
 
-          <div className={`${styles.button}`}>
+          <div className={`${styles.button} bg-[#C1ED64] font-semibold`}>
             <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
-              <h1 className="text-[#fff] flex items-center">
+              <h1 className="text-black flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
                 <IoIosArrowForward className="ml-1" />
               </h1>
@@ -110,7 +110,7 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 800px:flex items-center justify-between w-full bg-[#3321c8] h-[70px]`}
+        } transition hidden 800px:flex items-center justify-between w-full bg-[#C1ED64] h-[70px]`}
       >
         <div
           className={`${styles.section} relative ${styles.noramlFlex} justify-between`}
@@ -148,8 +148,8 @@ const Header = ({ activeHeading }) => {
                 className="relative cursor-pointer mr-[15px]"
                 onClick={() => setOpenWishlist(true)}
               >
-                <AiOutlineHeart size={30} color="rgb(255 255 255 / 83%)" />
-                <span className="absolute right-0 top-0 rounded-full bg-[#3bc177] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
+                <AiOutlineHeart size={30} color="black" />
+                <span className="absolute right-0 top-0 rounded-full bg-[#97c03e] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
                   {wishlist && wishlist.length}
                 </span>
               </div>
@@ -160,11 +160,8 @@ const Header = ({ activeHeading }) => {
                 className="relative cursor-pointer mr-[15px]"
                 onClick={() => setOpenCart(true)}
               >
-                <AiOutlineShoppingCart
-                  size={30}
-                  color="rgb(255 255 255 / 83%)"
-                />
-                <span className="absolute right-0 top-0 rounded-full bg-[#3bc177] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
+                <AiOutlineShoppingCart size={30} color="black" />
+                <span className="absolute right-0 top-0 rounded-full bg-[#97c03e] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
                   {cart && cart.length}
                 </span>
               </div>
@@ -182,7 +179,7 @@ const Header = ({ activeHeading }) => {
                   </Link>
                 ) : (
                   <Link to="/login">
-                    <CgProfile size={30} color="rgb(255 255 255 / 83%)" />
+                    <CgProfile size={30} color="black" />
                   </Link>
                 )}
               </div>
@@ -216,7 +213,7 @@ const Header = ({ activeHeading }) => {
           </div>
           <div>
             <Link to="/">
-              <p className="font-Poppins font-bold text-[30px] text-[#3321C8]">
+              <p className="font-Poppins font-bold text-[30px] text-[#97c03e]">
                 Ecomm Web
               </p>
             </Link>
@@ -268,7 +265,7 @@ const Header = ({ activeHeading }) => {
                 <input
                   type="search"
                   placeholder="Search Product..."
-                  className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md"
+                  className="h-[40px] w-full px-2 border-[#3bc177] border-[2px] rounded-md"
                   value={searchTerm}
                   onChange={handleSearchChange}
                 />
@@ -296,9 +293,11 @@ const Header = ({ activeHeading }) => {
               </div>
 
               <Navbar active={activeHeading} />
-              <div className={`${styles.button} ml-4 !rounded-[4px]`}>
+              <div
+                className={`${styles.button} ml-4 !rounded-[4px] bg-[#C1ED64]`}
+              >
                 <Link to="/shop-create">
-                  <h1 className="text-[#fff] flex items-center">
+                  <h1 className="text-black flex items-center">
                     Become Seller <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>

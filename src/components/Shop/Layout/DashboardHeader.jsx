@@ -13,10 +13,9 @@ const DashboardHeader = () => {
     <div className="w-full h-[80px] bg-white shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
       <div>
         <Link to="/dashboard">
-          <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-            alt=""
-          />
+          <p className="font-Poppins font-bold text-[40px] text-[#97c03e]">
+            Ecomm Web
+          </p>
         </Link>
       </div>
       <div className="flex items-center">

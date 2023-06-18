@@ -14,7 +14,7 @@ const AdminHeader = () => {
     <div className="w-full h-[80px] bg-white shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
       <div>
         <Link to="/">
-          <p className="font-Poppins font-bold text-[40px] text-[#3321C8]">
+          <p className="font-Poppins font-bold text-[40px] text-[#97c03e]">
             Ecomm Web
           </p>
         </Link>
