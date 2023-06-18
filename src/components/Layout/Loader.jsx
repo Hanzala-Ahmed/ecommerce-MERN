@@ -13,7 +13,28 @@ const Loader = () => {
   };
   return (
     <div className="w-full h-screen flex items-center justify-center">
-      <Lottie options={defaultOptions} width={300} height={300} />
+      <div class="loader">
+        <div class="box box-1">
+          <div class="side-left"></div>
+          <div class="side-right"></div>
+          <div class="side-top"></div>
+        </div>
+        <div class="box box-2">
+          <div class="side-left"></div>
+          <div class="side-right"></div>
+          <div class="side-top"></div>
+        </div>
+        <div class="box box-3">
+          <div class="side-left"></div>
+          <div class="side-right"></div>
+          <div class="side-top"></div>
+        </div>
+        <div class="box box-4">
+          <div class="side-left"></div>
+          <div class="side-right"></div>
+          <div class="side-top"></div>
+        </div>
+      </div>
     </div>
   );
 };

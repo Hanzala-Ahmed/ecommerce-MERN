@@ -99,7 +99,7 @@ const Header = ({ activeHeading }) => {
 
           <div className={`${styles.button} bg-[#C1ED64] font-semibold`}>
             <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
-              <h1 className="text-black flex items-center text-md">
+              <h1 className="text-black flex items-center text-sm">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
                 <IoIosArrowForward className="ml-1" />
               </h1>
@@ -297,7 +297,7 @@ const Header = ({ activeHeading }) => {
                 className={`${styles.button} ml-4 px-2 !rounded-[4px] bg-[#C1ED64]`}
               >
                 <Link to="/shop-create">
-                  <h1 className="text-black flex items-center text-md">
+                  <h1 className="text-black flex items-center text-sm">
                     Become Seller <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>

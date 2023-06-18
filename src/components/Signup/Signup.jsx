@@ -164,14 +164,14 @@ const Singup = () => {
             <div>
               <button
                 type="submit"
-                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-[#C1ED64] hover:bg-[#93ba3e]"
               >
                 Submit
               </button>
             </div>
             <div className={`${styles.noramlFlex} w-full`}>
               <h4>Already have an account?</h4>
-              <Link to="/login" className="text-blue-600 pl-2">
+              <Link to="/login" className="text-[#C1ED64] pl-2">
                 Sign In
               </Link>
             </div>

@@ -20,7 +20,7 @@ const AdminSideBar = ({ active }) => {
             color={`${active === 1 ? "crimson" : "#555"}`}
           />
           <h5
-            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            className={`800px:block pl-2 text-[18px] font-[400] ${
               active === 1 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
@@ -36,7 +36,7 @@ const AdminSideBar = ({ active }) => {
             color={`${active === 2 ? "crimson" : "#555"}`}
           />
           <h5
-            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            className={`800px:block pl-2 text-[18px] font-[400] ${
               active === 2 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
@@ -52,7 +52,7 @@ const AdminSideBar = ({ active }) => {
             color={`${active === 3 ? "crimson" : "#555"}`}
           />
           <h5
-            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            className={`800px:block pl-2 text-[18px] font-[400] ${
               active === 3 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
@@ -68,7 +68,7 @@ const AdminSideBar = ({ active }) => {
             color={`${active === 4 ? "crimson" : "#555"}`}
           />
           <h5
-            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            className={`800px:block pl-2 text-[18px] font-[400] ${
               active === 4 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
@@ -81,7 +81,7 @@ const AdminSideBar = ({ active }) => {
         <Link to="/admin-products" className="w-full flex items-center">
           <BsHandbag size={30} color={`${active === 5 ? "crimson" : "#555"}`} />
           <h5
-            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            className={`800px:block pl-2 text-[18px] font-[400] ${
               active === 5 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
@@ -97,7 +97,7 @@ const AdminSideBar = ({ active }) => {
             color={`${active === 7 ? "crimson" : "#555"}`}
           />
           <h5
-            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            className={`800px:block pl-2 text-[18px] font-[400] ${
               active === 7 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
@@ -113,7 +113,7 @@ const AdminSideBar = ({ active }) => {
             color={`${active === 8 ? "crimson" : "#555"}`}
           />
           <h5
-            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+            className={`800px:block pl-2 text-[18px] font-[400] ${
               active === 8 ? "text-[crimson]" : "text-[#555]"
             }`}
           >

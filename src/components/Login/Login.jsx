@@ -27,7 +27,7 @@ const Login = () => {
       .then((res) => {
         toast.success("Login Success!");
         navigate("/");
-        window.location.reload(true); 
+        window.location.reload(true);
       })
       .catch((err) => {
         toast.error(err.response.data.message);
@@ -101,7 +101,7 @@ const Login = () => {
                   type="checkbox"
                   name="remember-me"
                   id="remember-me"
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-[#C1ED64] focus:ring-[#C1ED64] border-gray-300 rounded"
                 />
                 <label
                   htmlFor="remember-me"
@@ -113,7 +113,7 @@ const Login = () => {
               <div className="text-sm">
                 <a
                   href=".forgot-password"
-                  className="font-medium text-blue-600 hover:text-blue-500"
+                  className="font-medium text-[#C1ED64] hover:text-[#97c03e]"
                 >
                   Forgot your password?
                 </a>
@@ -122,14 +122,14 @@ const Login = () => {
             <div>
               <button
                 type="submit"
-                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-[#C1ED64] hover:bg-[#93ba3e]"
               >
                 Submit
               </button>
             </div>
             <div className={`${styles.noramlFlex} w-full`}>
               <h4>Not have any account?</h4>
-              <Link to="/sign-up" className="text-blue-600 pl-2">
+              <Link to="/sign-up" className="text-[#C1ED64] pl-2">
                 Sign Up
               </Link>
             </div>

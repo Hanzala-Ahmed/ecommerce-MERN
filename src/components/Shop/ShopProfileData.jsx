@@ -54,7 +54,7 @@ const ShopProfileData = ({ isOwner }) => {
                 <div
                   className={`${styles.button} px-2 !rounded-[4px] h-[42px] bg-[#C1ED64] font-semibold`}
                 >
-                  <span className="text-black text-md">Go Dashboard</span>
+                  <span className="text-black text-sm">Go Dashboard</span>
                 </div>
               </Link>
             </div>
