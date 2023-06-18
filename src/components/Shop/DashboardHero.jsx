@@ -106,7 +106,7 @@ const DashboardHero = () => {
             PKR{availableBalance}
           </h5>
           <Link to="/dashboard-withdraw-money">
-            <h5 className="pt-4 pl-[2] text-[#077f9c]">Withdraw Money</h5>
+            <h5 className="pt-4 pl-[2] text-[#C1ED64]">Withdraw Money</h5>
           </Link>
         </div>
 
@@ -123,7 +123,7 @@ const DashboardHero = () => {
             {orders && orders.length}
           </h5>
           <Link to="/dashboard-orders">
-            <h5 className="pt-4 pl-2 text-[#077f9c]">View Orders</h5>
+            <h5 className="pt-4 pl-2 text-[#C1ED64]">View Orders</h5>
           </Link>
         </div>
 
@@ -144,7 +144,7 @@ const DashboardHero = () => {
             {products && products.length}
           </h5>
           <Link to="/dashboard-products">
-            <h5 className="pt-4 pl-2 text-[#077f9c]">View Products</h5>
+            <h5 className="pt-4 pl-2 text-[#C1ED64]">View Products</h5>
           </Link>
         </div>
       </div>
